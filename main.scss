@@ -1,3 +1,5 @@
+@import 'fontawesome-all.min.css';
+
 body {
     background: rgb(27, 27, 27);
     margin: 0;
@@ -10,16 +12,17 @@ body {
 
 .container {
     position: relative;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     background: #232323;
     padding: 2em;
-
     h1 {
         margin: 0;
+        text-align: center;
     }
     p {
         color: gray;
+        text-align: center;
     }
 }
 
@@ -44,13 +47,13 @@ button {
     }
 }
 
-.svg {
-    width: 200px;
-    position: absolute;
-    top: -40px;
-    left: -30px;
-    pointer-events: none;
-}
+// .svg {
+//     width: 200px;
+//     position: absolute;
+//     top: -40px;
+//     left: -30px;
+//     pointer-events: none;
+// }
 
 .hide {
     display: none;
