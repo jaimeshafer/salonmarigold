@@ -18,11 +18,9 @@ body {
 }
 .container h1 {
   margin: 0;
-  position: relative;
 }
 .container p {
   color: gray;
-  position: relative;
 }
 
 button {
@@ -42,6 +40,14 @@ button:hover {
 }
 button:active {
   background: orange;
+}
+
+.svg {
+  width: 200px;
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  pointer-events: none;
 }
 
 .hide {

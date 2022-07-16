@@ -18,11 +18,9 @@ body {
     padding: 2em;
     h1 {
         margin: 0;
-        position: relative;
     }
     p {
         color: gray;
-        position: relative;
     }
 }
 
@@ -47,13 +45,13 @@ button {
     }
 }
 
-// .svg {
-//     width: 200px;
-//     position: absolute;
-//     top: -40px;
-//     left: -30px;
-//     pointer-events: none;
-// }
+.svg {
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    pointer-events: none;
+}
 
 .hide {
     display: none;
