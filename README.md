@@ -2,7 +2,7 @@
 
 The website for Salon Marigold, a hair studio in Brentwood, Tennessee.
 
-Built with **Next.js**, **React**, **TypeScript**, and plain CSS. It is designed to deploy on Vercel with no database, server code, or environment variables required.
+Built with **Next.js**, **React**, **TypeScript**, and plain CSS. Next.js exports the site as static files for deployment on Cloudflare Pages. No database, server code, or environment variables are required.
 
 ## Day-to-day maintenance
 
@@ -60,12 +60,14 @@ pnpm lint
 pnpm build
 ```
 
-## Deploy to Vercel
+## Deploy to Cloudflare Pages
 
-1. Create a **private** GitHub repository and push this folder to it.
-2. In Vercel, select **Add New → Project**, then import that repository.
-3. Vercel will detect Next.js automatically. Leave the build settings at their defaults and deploy.
-4. In Vercel’s project settings, add `salonmarigold.co` as the custom domain. Vercel will show the exact DNS record to add where the domain is registered.
+1. Push the intended production branch to GitHub.
+2. In Cloudflare, open **Workers & Pages → Create application → Pages → Connect to Git**.
+3. Select the `salonmarigold` repository.
+4. Use `pnpm build` as the build command and `out` as the build output directory.
+5. Deploy and verify the generated `*.pages.dev` address.
+6. In the Pages project's **Custom domains** settings, add `salonmarigold.co`.
 
 No environment variables are needed for the current site.
 
@@ -78,4 +80,4 @@ There are no passwords, API keys, or private tokens in this project. The salon�
 - Update prices or services after changing GlossGenius.
 - Replace or add reviews only with the client’s permission.
 - Keep booking contact details in sync if they change.
-- Do not place passwords or API keys directly into `app/page.tsx` or any committed file. If you later need a secret, add it in Vercel’s Environment Variables instead.
+- Do not place passwords or API keys directly into `app/page.tsx` or any committed file. If you later need a secret, add it in Cloudflare’s encrypted settings instead.

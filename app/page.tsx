@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const phoneNumber = "615-631-5679";
 const emailAddress = "brittneyshaferhair@gmail.com";
 const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent("Appointment request — Salon Marigold")}`;
@@ -164,4 +166,3 @@ export default function Home() {
     </main>
   );
 }
-import Image from "next/image";
