@@ -161,6 +161,7 @@ export default function Home() {
 
       <footer>
         <p>© {new Date().getFullYear()} Salon Marigold</p>
+        <p>Est. 2018</p>
         <a href={emailLink}>{emailAddress}</a>
       </footer>
     </main>
