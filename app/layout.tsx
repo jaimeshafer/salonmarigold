@@ -9,8 +9,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/png" }],
-    apple: [{ url: "/favicon.png", type: "image/png" }],
+    icon: [{ url: "/salon-marigold-favicon.svg", type: "image/svg+xml" }],
   },
   openGraph: {
     title: "Salon Marigold | Hair artistry in Brentwood, TN",
