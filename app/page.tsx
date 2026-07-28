@@ -44,6 +44,22 @@ const hours = [
   ["Saturday", "9:00 AM – 6:00 PM"],
 ];
 
+function UpRightArrow() {
+  return (
+    <svg className="link-arrow" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M3 13 13 3M6 3h7v7" />
+    </svg>
+  );
+}
+
+function DownArrow() {
+  return (
+    <svg className="link-arrow" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M8 2v12m-5-5 5 5 5-5" />
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -55,7 +71,7 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#visit">Visit</a>
         </nav>
-        <a className="header-book" href={textLink}>Text to book <span aria-hidden="true">↗</span></a>
+        <a className="header-book" href={textLink}>Text to book <UpRightArrow /></a>
       </header>
 
       <section className="hero" id="top">
@@ -64,8 +80,8 @@ export default function Home() {
           <h1>Hair that feels<br /><em>like you.</em></h1>
           <p className="hero-text">A welcoming, one-on-one salon experience for cuts, color, and the confidence that follows.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href={textLink}>Text to book <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+            <a className="button button-primary" href={textLink}>Text to book <UpRightArrow /></a>
+            <a className="text-link" href="#services">Explore services <DownArrow /></a>
           </div>
         </div>
         <div className="hero-art" aria-label="Salon Marigold logo">
@@ -111,7 +127,7 @@ export default function Home() {
         </div>
         <div className="gift-card-action">
           <Image className="scissors-mark" src="/scissors-mark.png" alt="" width={1142} height={1218} aria-hidden="true" />
-          <a className="button button-primary" href={giftCardUrl} target="_blank" rel="noreferrer">Buy a gift card <span aria-hidden="true">↗</span></a>
+          <a className="button button-primary" href={giftCardUrl} target="_blank" rel="noreferrer">Buy a gift card <UpRightArrow /></a>
         </div>
       </section>
 
@@ -141,7 +157,7 @@ export default function Home() {
             <em>Brentwood.</em>
           </h2>
           <address>Sola Salons<br />1731 Mallory Lane<br />Brentwood, TN 37027</address>
-          <a className="text-link" href="https://maps.google.com/?q=Sola+Salons+1731+Mallory+Lane+Brentwood+TN+37027" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+          <a className="text-link" href="https://maps.google.com/?q=Sola+Salons+1731+Mallory+Lane+Brentwood+TN+37027" target="_blank" rel="noreferrer">Get directions <UpRightArrow /></a>
         </div>
         <div className="hours" aria-label="Salon hours">
           <p className="eyebrow">Studio hours</p>
@@ -154,8 +170,8 @@ export default function Home() {
         <p className="eyebrow">Your next good hair day starts here</p>
         <h2>Let’s make<br /><em>something lovely.</em></h2>
         <div className="booking-actions">
-          <a className="button button-light" href={textLink}>Text {phoneNumber} <span aria-hidden="true">↗</span></a>
-          <a className="text-link booking-email" href={emailLink}>Email Brittney <span aria-hidden="true">↗</span></a>
+          <a className="button button-light" href={textLink}>Text {phoneNumber} <UpRightArrow /></a>
+          <a className="text-link booking-email" href={emailLink}>Email Brittney <UpRightArrow /></a>
         </div>
       </section>
 
