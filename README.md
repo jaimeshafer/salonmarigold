@@ -17,6 +17,7 @@ Production is available at [salonmarigold.co](https://salonmarigold.co).
 | `app/robots.ts` | Generates `robots.txt` and tells search engines where to find the sitemap. |
 | `app/sitemap.ts` | Generates `sitemap.xml` for the production domain. |
 | `public/` | Static images, logos, favicon, and social sharing artwork. |
+| `brand-assets/originals/` | Original high-resolution and Illustrator brand exports, kept outside `public/` so they are not deployed with the website. |
 | `next.config.ts` | Configures Next.js to create a static export in `out/` and disables image optimization that requires a server. |
 | `wrangler.jsonc` | Configures the Cloudflare Worker, static asset directory, `workers.dev` route, and branch preview URLs. |
 | `package.json` | Project metadata, Node.js requirement, package versions, and development commands. |
